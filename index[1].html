@@ -1,0 +1,240 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohammed Abdul Aman - Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #111;
+                color: #fff;
+            }
+            header {
+                height: 100vh;
+                background: #111;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            header h1 {
+                font-size: 60px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            header p {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: #222;
+                padding: 10px 0;
+                text-align: center;
+                z-index: 1000;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #0fecc8;
+            }
+            section {
+                padding: 60px 20px;
+                text-align: center;
+                background: #222;
+                margin-bottom: 30px;
+            }
+            section h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+                color: #0fecc8;
+            }
+            .about-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .about-section img {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+            .project-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .project-card {
+                background: #333;
+                border: 1px solid #444;
+                padding: 20px;
+                width: 250px;
+                margin: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+            .skills-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px 0;
+            }
+            .skill-box {
+                background: #333;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 8px;
+                width: 180px;
+                text-align: center;
+                transition: background 0.3s;
+            }
+            .skill-box:hover {
+                background: #0fecc8;
+                color: #000;
+            }
+            .contact-icons a {
+                margin: 0 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 24px;
+            }
+            footer {
+                background: #222;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            .social a {
+                margin: 0 10px;
+                font-size: 28px;
+            }
+            footer p {
+                color: #999;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Full-Screen Landing Page -->
+        <header>
+            <h1>Mohammed Abdul Aman</h1>
+            <p>Graduate Student | Chemical Engineering | Process Validation & Operational Excellence</p>
+            <p><a href="#contact">Contact Me</a></p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-section">
+                <img src="profile-placeholder.jpg" alt="Profile Picture">
+                <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University pursuing a Master's in Chemical Engineering.
+                    I have a strong passion for process validation, operational excellence, in the pharmaceutical and biotech industries.
+                    With experience at Boehringer Ingelheim in MSAT, I aim to contribute to cutting-edge projects that positively impact
+                    the healthcare and manufacturing landscape.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-list">
+                <p><strong style="color: #0fecc8;">Sai Life Sciences</strong><br><em>Senior Executive, Process Engineering (Jun 2022 – Jul 2023)</em></p>
+                <ul>
+                    <li>Led the optimization and robustness improvement program for known products, achieving a 10% cost savings through yield improvement, solvent recovery, and catalyst reuse.</li>
+                    <li>Completed product campaigns worth $22 million, demonstrating strong collaboration and ownership.</li>
+                    <li>Collaborated on technology transfer projects from R&D to full-scale production, ensuring seamless transitions and troubleshooting for commercial success.</li>
+                </ul>
+                <p><strong style="color: #0fecc8;">Piramal Pharma Solutions</strong><br><em>Senior Executive, Process Engineering (Feb 2021 – Jun 2022)</em></p>
+                <ul>
+                    <li>Developed a solvent reduction strategy, resulting in a 30% cost improvement.</li>
+                    <li>Enhanced production capacity by over 75%, earning the "Super Achiever Award".</li>
+                    <li>Led new technology implementation to improve plant efficiency and reduce cycle time.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-list">
+                <p><img src="purdue-logo.png" alt="Purdue Logo" width="100px"><br><strong>Master of Science in Chemical Engineering</strong> (2023 - 2025)</p>
+                <p><img src="chaitanya-logo.png" alt="Chaitanya Logo" width="100px"><br><strong>Bachelor of Technology in Chemical Engineering</strong> (2017 - 2021)</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Automated Chemical Process Optimization Tool</h3>
+                    <p>Developed a tool that automates chemical process optimization using data-driven algorithms. The project aimed to reduce manual calculations, improve process efficiency, and minimize human error.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">Data Analysis</div>
+                <div class="skill-box">Python</div>
+                <div class="skill-box">Machine Learning</div>
+                <div class="skill-box">Process Validation</div>
+                <div class="skill-box">Operational Excellence</div>
+                <div class="skill-box">MATLAB</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/mohammed-abdul-aman/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/amaankahif" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:amaankahif53@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p><strong>Email:</strong> amaankahif53@gmail.com</p>
+            <p><strong>Phone:</strong> +1 765-694-9858</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Mohammed Abdul Aman. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+    
