@@ -1,0 +1,172 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohammed Abdul Aman - Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Arial', sans-serif;
+                color: #333;
+            }
+            header {
+                height: 100vh;
+                background: #333;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+            header p {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: #333;
+                padding: 10px 0;
+                text-align: center;
+                z-index: 1000;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #ff6347;
+            }
+            section {
+                padding: 60px 20px;
+                text-align: center;
+            }
+            .project-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .project-card {
+                background: #f9f9f9;
+                border: 1px solid #ccc;
+                padding: 20px;
+                width: 250px;
+                margin: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+            .contact a {
+                color: #ff6347;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+            footer {
+                background: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Full-Screen Landing Page -->
+        <header>
+            <h1>Mohammed Abdul Aman</h1>
+            <p>Graduate Student | Chemical Engineering | Process Validation & Operational Excellence</p>
+            <p><a href="#contact">Contact Me</a></p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University pursuing a Master's in Chemical Engineering.
+                I have a strong passion for process validation, operational excellence, in the pharmaceutical and biotech industries.
+                With experience at Boehringer Ingelheim in MSAT, I aim to contribute to cutting-edge projects that positively impact
+                the healthcare and manufacturing landscape.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <p><strong>Sai Life Sciences | Senior Executive, Process Engineering</strong><br>Jun 2022 – Jul 2023</p>
+            <ul>
+                <li>Led the optimization and robustness improvement program for known products, achieving a 10% cost savings through yield improvement, solvent recovery, and catalyst reuse.</li>
+                <li>Completed product campaigns worth $22 million, demonstrating strong collaboration and ownership.</li>
+                <li>Collaborated on technology transfer projects from R&D to full-scale production, ensuring seamless transitions and troubleshooting for commercial success.</li>
+            </ul>
+            <p><strong>Piramal Pharma Solutions | Senior Executive, Process Engineering</strong><br>Feb 2021 – Jun 2022</p>
+            <ul>
+                <li>Developed a solvent reduction strategy, resulting in a 30% cost improvement.</li>
+                <li>Enhanced production capacity by over 75%, earning the "Super Achiever Award".</li>
+                <li>Led new technology implementation to improve plant efficiency and reduce cycle time.</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Automated Chemical Process Optimization Tool</h3>
+                    <p>Developed a tool that automates chemical process optimization using data-driven algorithms. The project aimed to reduce manual calculations, improve process efficiency, and minimize human error. It involved using Python and MATLAB to implement optimization algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, MATLAB, SQL</li>
+                <li><strong>Tools & Software:</strong> SAP, VISIMIX, DYNOCHEM, Process Analytical Tools (PAT), Statistical Process Control (SPC), GMP PRO, MS Office</li>
+                <li><strong>Industry Skills:</strong> Engineering calculations, Quality by Design (QbD), Design of Experiment (DoE), Scale-up, Technology Transfer, Process Optimization & Intensification, Process Validation, Equipment Mapping, HazOp, Quality Management, Change Management, Risk Assessment, Investigations, Deviation Report, OOS, OOT</li>
+                <li><strong>Analytical Skills:</strong> HPLC, GC, KF, Data Analysis, Tableau</li>
+                <li><strong>Soft Skills:</strong> Leadership, Collaboration, Time Management, Presentation Skills</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohammed-abdul-aman/" target="_blank">Mohammed Abdul Aman</a></p>
+            <p><strong>GitHub:</strong> <a href="https://amaankahif.github.io/" target="_blank">GitHub Profile</a></p>
+            <p><strong>Email:</strong> <a href="mailto:amaankahif53@gmail.com">amaankahif53@gmail.com</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Mohammed Abdul Aman. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+    
