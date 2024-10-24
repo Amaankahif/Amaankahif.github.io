@@ -1,56 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abdul Aman - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: white; padding: 20px; text-align: center; }
-        section { padding: 20px; text-align: center; }
-        .profile-picture { width: 150px; border-radius: 50%; }
-        .experience, .education { margin: 20px 0; }
-        .logos img { width: 100px; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; }
-    </style>
+    <title>Mohammed Abdul Aman - Interactive Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mohammed Abdul Aman</h1>
-        <p>Graduate Student | Chemical Engineering | Process Validation & Operational Excellence</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Mohammed Abdul Aman</h1>
+            <p>Graduate Student | Chemical Engineering</p>
+        </div>
     </header>
-    <section>
+
+    <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-        <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University pursuing a Master's in Chemical Engineering. I have a strong passion for process validation, operational excellence, in the pharmaceutical and biotech industries. With experience at Boehringer Ingelheim in MSAT, I aim to contribute to cutting-edge projects that positively impact the healthcare and manufacturing landscape.</p>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University...</p>
     </section>
-    <section class="experience">
+
+    <section id="experience">
         <h2>Work Experience</h2>
-        <p><strong>Sai Life Sciences</strong> | Senior Executive, Process Engineering (Jun 2022 – Jul 2023)</p>
-        <ul>
-            <li>Led the optimization and robustness improvement program for known products, achieving a 10% cost savings through yield improvement, solvent recovery, and catalyst reuse.</li>
-            <li>Completed product campaigns worth $22 million, demonstrating strong collaboration and ownership.</li>
-            <li>Collaborated on technology transfer projects from R&D to full-scale production, ensuring seamless transitions and troubleshooting for commercial success.</li>
-        </ul>
-        <p><strong>Piramal Pharma Solutions</strong> | Senior Executive, Process Engineering (Feb 2021 – Jun 2022)</p>
-        <ul>
-            <li>Developed a solvent reduction strategy, resulting in a 30% cost improvement.</li>
-            <li>Enhanced production capacity by over 75%, earning the "Super Achiever Award".</li>
-            <li>Led new technology implementation to improve plant efficiency and reduce cycle time.</li>
-        </ul>
-    </section>
-    <section class="education">
-        <h2>Education</h2>
-        <div class="logos">
-            <img src="purdue_logo.png" alt="Purdue Logo">
-            <p>Master of Science in Chemical Engineering (2023 - 2025)</p>
-            <img src="msrit_logo.png" alt="MSRIT Logo">
-            <p>Bachelor of Technology in Chemical Engineering (2017 - 2021)</p>
+        <div>
+            <h3>Sai Life Sciences</h3>
+            <p>Senior Executive, Process Engineering (2022-2023)</p>
+        </div>
+        <div>
+            <h3>Piramal Pharma Solutions</h3>
+            <p>Senior Executive, Process Engineering (2021-2022)</p>
         </div>
     </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="logos">
+            <img src="purdue_logo.png" alt="Purdue University Logo" class="edu-logo">
+            <p>Purdue University - Master of Science in Chemical Engineering (2023-2025)</p>
+            <img src="msrit_logo.png" alt="MSRIT Logo" class="edu-logo">
+            <p>MSRIT - Bachelor of Technology in Chemical Engineering (2017-2021)</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Automated Chemical Process Optimization Tool</h3>
+            <p>Developed a tool that automates chemical process optimization...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:amaankahif53@gmail.com">amaankahif53@gmail.com</a></p>
+    </section>
+
     <footer>
-        <p>Contact me: <a href="mailto:amaankahif53@gmail.com">amaankahif53@gmail.com</a></p>
+        <p>&copy; 2024 Mohammed Abdul Aman</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
