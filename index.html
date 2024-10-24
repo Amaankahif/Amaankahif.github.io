@@ -1,166 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abdul Aman Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #1f1f1f;
-            color: white;
-        }
-
-        /* Navbar */
-        nav {
-            background-color: #2b2b2b;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: #b3b3b3;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #32cd32; /* Highlight color on hover */
-        }
-
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        #home {
-            background-color: #0a0a0a;
-        }
-
-        #about {
-            background-color: #111111;
-        }
-
-        #experience {
-            background-color: #222222;
-        }
-
-        #projects {
-            background-color: #333333;
-        }
-
-        #contact {
-            background-color: #444444;
-        }
-
-        h1, h2 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        .btn {
-            background-color: #32cd32;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        /* Profile picture */
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #2b2b2b;
-            padding: 15px;
-            text-align: center;
-            color: #b3b3b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mohammed Abdul Aman | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Sections -->
-    <div id="home" class="section">
-        <div>
-            <h1>Mohammed Abdul Aman</h1>
-            <p>Graduate Student | Chemical Engineering | Process Validation & Operational Excellence</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">Mohammed Abdul Aman</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div id="about" class="section">
-        <div>
-            <img src="your_profile_picture_link_here.png" alt="Profile Picture" class="profile-pic">
-            <h2>About Me</h2>
-            <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University...</p>
-        </div>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h2>Hello, I'm</h2>
+      <h1>Mohammed Abdul Aman</h1>
+      <p>Graduate Student | Chemical Engineering</p>
+      <a href="#about" class="btn">Learn More</a>
     </div>
+  </section>
 
-    <div id="experience" class="section">
-        <div>
-            <h2>Experience</h2>
-            <p>Sai Life Sciences, Senior Executive, Process Engineering (2022-2023)</p>
-            <p>Piramal Pharma Solutions, Senior Executive, Process Engineering (2021-2022)</p>
-        </div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University pursuing a Master's in Chemical Engineering...</p>
     </div>
+  </section>
 
-    <div id="projects" class="section">
-        <div>
-            <h2>Projects</h2>
-            <p>Project 1: Automated Chemical Process Optimization Tool</p>
-            <p>Project 2: Data-Driven Scaling...</p>
-        </div>
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Purdue University</h3>
+        <p>Master of Science in Chemical Engineering (2023 - 2025)</p>
+      </div>
+      <div class="education-card">
+        <h3>MSRIT</h3>
+        <p>Bachelor of Technology in Chemical Engineering (2017 - 2021)</p>
+      </div>
     </div>
+  </section>
 
-    <div id="contact" class="section">
-        <div>
-            <h2>Contact Me</h2>
-            <p>Email: amaankahif53@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-abdul-aman" target="_blank">linkedin.com/in/mohammed-abdul-aman</a></p>
-        </div>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-card">
+        <h3>Sai Life Sciences</h3>
+        <p>Senior Executive, Process Engineering (2022 - 2023)</p>
+      </div>
+      <div class="experience-card">
+        <h3>Piramal Pharma Solutions</h3>
+        <p>Senior Executive, Process Engineering (2021 - 2022)</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 Mohammed Abdul Aman
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Automated Chemical Process Optimization Tool</h3>
+        <p>A project developed using Python and MATLAB...</p>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Data-Driven Scaling Solutions</h3>
+        <p>Process intensification and optimization for pharma manufacturing...</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript for Smooth Scrolling -->
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: amaankahif53@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-abdul-aman" target="_blank">linkedin.com/in/mohammed-abdul-aman</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mohammed Abdul Aman</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
