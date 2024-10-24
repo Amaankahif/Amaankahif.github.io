@@ -3,46 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abdul Aman - Interactive Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mohammed Abdul Aman - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Profile picture */
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Project grid layout */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .project-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Logos for Education */
+        .education-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1>Mohammed Abdul Aman</h1>
-            <p>Graduate Student | Chemical Engineering</p>
-        </div>
-    </header>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University...</p>
+        <img src="path_to_your_profile_picture.png" alt="Profile Picture" class="profile-pic">
+        <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University pursuing a Master's in Chemical Engineering...</p>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Work Experience</h2>
-        <div>
-            <h3>Sai Life Sciences</h3>
-            <p>Senior Executive, Process Engineering (2022-2023)</p>
+        <h3>Sai Life Sciences</h3>
+        <p>Senior Executive, Process Engineering (2022-2023)</p>
+        <p>Led optimization and robustness improvement for known products...</p>
+        
+        <h3>Piramal Pharma Solutions</h3>
+        <p>Senior Executive, Process Engineering (2021-2022)</p>
+        <p>Developed a solvent reduction strategy, leading to 30% cost improvement...</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="path_to_purdue_logo.png" alt="Purdue University Logo" class="education-logo">
+            <p>Purdue University - Master of Science in Chemical Engineering (2023-2025)</p>
         </div>
-        <div>
-            <h3>Piramal Pharma Solutions</h3>
-            <p>Senior Executive, Process Engineering (2021-2022)</p>
+        <div class="education-item">
+            <img src="path_to_msrit_logo.png" alt="MSRIT Logo" class="education-logo">
+            <p>MSRIT - Bachelor of Technology in Chemical Engineering (2017-2021)</p>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="logos">
-            <img src="purdue_logo.png" alt="Purdue University Logo" class="edu-logo">
-            <p>Purdue University - Master of Science in Chemical Engineering (2023-2025)</p>
-            <img src="msrit_logo.png" alt="MSRIT Logo" clas
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="path_to_project_image1.png" alt="Project 1 Image">
+                <h3>Project 1</h3>
+                <p>Automated Chemical Process Optimization Tool...</p>
+            </div>
+            <div class="project-item">
+                <img src="path_to_project_image2.png" alt="Project 2 Image">
+                <h3>Project 2</h3>
+                <p>Data-driven product scaling with Python and MATLAB...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: amaankahif53@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-abdul-aman" target="_blank">linkedin.com/in/mohammed-abdul-aman</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mohammed Abdul Aman. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
