@@ -3,93 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abdul Aman - Portfolio</title>
+    <title>Mohammed Abdul Aman Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            overflow: hidden; /* Disable scrolling */
+            background-color: #1f1f1f;
+            color: white;
         }
 
-        /* Styling for the navigation bar */
+        /* Navbar */
         nav {
-            background-color: #333;
-            padding: 15px;
+            background-color: #2b2b2b;
+            padding: 10px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
-            color: white;
+            color: #b3b3b3;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
+            font-size: 18px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #ddd;
+            color: #32cd32; /* Highlight color on hover */
         }
 
-        /* Main container ensuring content fits in one page */
-        .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr); /* Equal height sections */
-            height: 100vh; /* Full height */
-        }
-
-        section {
-            padding: 20px;
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            overflow: hidden;
         }
 
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
+        #home {
+            background-color: #0a0a0a;
+        }
+
+        #about {
+            background-color: #111111;
+        }
+
+        #experience {
+            background-color: #222222;
+        }
+
+        #projects {
+            background-color: #333333;
+        }
+
+        #contact {
+            background-color: #444444;
+        }
+
+        h1, h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .btn {
+            background-color: #32cd32;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
         /* Profile picture */
         .profile-pic {
             border-radius: 50%;
-            width: 80px;
-            height: 80px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
+            margin-bottom: 20px;
         }
 
-        /* Project grid layout */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 10px;
-        }
-
-        .project-item {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-
-        .project-item img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* Logos for Education */
-        .education-logo {
-            width: 60px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #2b2b2b;
+            padding: 15px;
             text-align: center;
-            padding: 10px;
+            color: #b3b3b3;
         }
     </style>
 </head>
@@ -97,69 +98,69 @@
 
     <!-- Navigation Bar -->
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Container with equal height sections -->
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
+    <!-- Sections -->
+    <div id="home" class="section">
+        <div>
+            <h1>Mohammed Abdul Aman</h1>
+            <p>Graduate Student | Chemical Engineering | Process Validation & Operational Excellence</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div>
+            <img src="your_profile_picture_link_here.png" alt="Profile Picture" class="profile-pic">
             <h2>About Me</h2>
-            <img src="path_to_your_profile_picture.png" alt="Profile Picture" class="profile-pic">
             <p>Hi, I'm Mohammed Abdul Aman, a graduate student at Purdue University...</p>
-        </section>
+        </div>
+    </div>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <h3>Sai Life Sciences</h3>
-            <p>Senior Executive, Process Engineering (2022-2023)</p>
-            <p>Optimized known product processes...</p>
-        </section>
+    <div id="experience" class="section">
+        <div>
+            <h2>Experience</h2>
+            <p>Sai Life Sciences, Senior Executive, Process Engineering (2022-2023)</p>
+            <p>Piramal Pharma Solutions, Senior Executive, Process Engineering (2021-2022)</p>
+        </div>
+    </div>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div>
-                <img src="path_to_purdue_logo.png" alt="Purdue University Logo" class="education-logo">
-                <p>Purdue University - Master of Science in Chemical Engineering (2023-2025)</p>
-            </div>
-            <div>
-                <img src="path_to_msrit_logo.png" alt="MSRIT Logo" class="education-logo">
-                <p>MSRIT - Bachelor of Technology in Chemical Engineering (2017-2021)</p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
+    <div id="projects" class="section">
+        <div>
             <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <img src="path_to_project_image1.png" alt="Project 1 Image">
-                    <p>Automated Chemical Process Tool...</p>
-                </div>
-                <div class="project-item">
-                    <img src="path_to_project_image2.png" alt="Project 2 Image">
-                    <p>Data-driven scaling...</p>
-                </div>
-            </div>
-        </section>
+            <p>Project 1: Automated Chemical Process Optimization Tool</p>
+            <p>Project 2: Data-Driven Scaling...</p>
+        </div>
+    </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
+    <div id="contact" class="section">
+        <div>
             <h2>Contact Me</h2>
             <p>Email: amaankahif53@gmail.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-abdul-aman" target="_blank">linkedin.com/in/mohammed-abdul-aman</a></p>
-        </section>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mohammed Abdul Aman. All Rights Reserved.</p>
+        &copy; 2024 Mohammed Abdul Aman
     </footer>
 
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
